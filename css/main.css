@@ -1,3 +1,13 @@
+@font-face {
+    font-family: action_manbold;
+    src: url('../web%20fonts/actionman_bold_macroman/Action_Man_Bold-webfont.ttf');
+}
+
+@font-face {
+    font-family: action_manregular;
+    src: url('../web%20fonts/actionman_regular_macroman/Action_Man-webfont.ttf');
+}
+
 body {
     background-color: black;
 }
@@ -12,18 +22,18 @@ body {
     z-index: 1;
 }
 
-.ryu {
+.ryu, .text-content {
+    width: 659px;
+    height: 494px;
+    float: left;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool {
     width: 659px;
     height: 494px;
 }
 
-.ryu-ready, .ryu-still, .ryu-throwing {
-    width: 659px;
-    height: 494px;
-    border: 1px solid black;
-}
-
-.ryu-ready, .ryu-throwing {
+.ryu-ready, .ryu-throwing, .ryu-cool {
     display: none;
 }
 
@@ -39,7 +49,7 @@ body {
     background-image: url("../images/ryu-throwing-hadouken.png");
 }
 
-.hadouken, .ryu-ready, .ryu-throwing, .ryu-still {
+.hadouken, .ryu-ready, .ryu-throwing, .ryu-still, .ryu-cool {
     background-repeat: no-repeat;
 }
 
@@ -47,7 +57,7 @@ body {
     background-image: url("../images/hadouken.gif");
     width: 156px;
     height: 90px;
-    /*display: none;*/
+    display: none;
     position: absolute;
     z-index: 10;
     top: 168px;
@@ -55,5 +65,59 @@ body {
     float: left;
 }
 
+.ryu-cool {
+    background-image: url("../images/ryu-cool.gif");
+}
 
+.text-content {
+    z-index: 11;
+}
 
+.sf-logo, .jquery-logo {
+    width: 659px;
+    height: 494px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sf-logo {
+    background-image: url("../images/sf-logo.png");
+}
+
+.jquery-logo {
+    background-image: url("../images/jquery-logo.png");
+    display: none;
+}
+
+.brought-by, .how-to {
+    display: none;
+}
+
+.brought-by {
+    font-size: 50px;
+    margin-top: 200px;
+    margin-left: 70px;
+    font-size: 50px;
+    font-family: action_manbold;
+    color: red;
+}
+
+.how-to {
+    font-weight: 100;
+    font-size: 50px;
+    font-family: action_manregular;
+}
+
+.how-to p:nth-child(1) {
+    width: 367px;
+    height: 250px;
+    margin-top: 16px;
+}
+
+.how-to p:nth-child(2) {
+    width: 383px;
+    height: 250px;
+    margin-top: -89px;
+    margin-left: 350px;
+
+}
